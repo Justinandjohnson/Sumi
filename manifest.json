@@ -1,0 +1,29 @@
+{
+  "name": "Sumi",
+  "description": "Summarize any article",
+  "version": "0.0.7",
+  "manifest_version": 3,
+  "homepage_url": "https://github.com/Justinandjohnson/Sumi",
+  "action": {},
+  "permissions": ["scripting", "activeTab", "storage"],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "icons": {
+    "16": "WIZARD.png",
+    "32": "WIZARD.png",
+    "48": "WIZARD.png",
+    "128": "WIZARD.png"
+  },
+  "host_permissions": ["https://*.openai.com/"],
+  "background": {
+    "service_worker": "background.bundle.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
